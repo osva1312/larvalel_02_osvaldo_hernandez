@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+.header{
+    background: linear-gradient(transparent, black), url('/media/header.jpg');
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.text-color{
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+.photo-team{
+    height: 400px;
+
+}
+.lista li::marker{
+    color: #ffffff;
+}
+.body-deatil{
+    background-color: rgb(33, 38, 38);
+    color: #ffffff;
+    background-image: url('/media/header.jpg');
+}
