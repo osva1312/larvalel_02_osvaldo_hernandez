@@ -5,8 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 
-Route::get('/chi_siamo', [PublicController::class, 'chi_siamo'] )->name('chi_siamo');
+Route::get('/about_us', [PublicController::class, 'chi_siamo'] )->name('about_us');
 
-Route::get('/servizi', [PublicController::class, 'servizi'])->name('servizi');
+Route::get('/services', [PublicController::class, 'servizi'])->name('services');
 
-Route::get('/birrificio/detail/{id}', [PublicController::class, 'detail_page'])->name('detail_page');
+Route::get('/brewery/detail/{id}', [PublicController::class, 'detail_page'])->name('detail_page');
+
+Route::get('/services_detail/{id}',[PublicController::class, 'services_detail'])->name('services_detail');

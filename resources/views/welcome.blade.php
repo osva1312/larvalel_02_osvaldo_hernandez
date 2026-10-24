@@ -10,7 +10,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-dark border-bottom" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,10 +20,10 @@
           <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('servizi')}}">Servizi</a>
+          <a class="nav-link" href="{{route('services')}}">Servizi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('chi_siamo')}}">Chi siamo</a>
+          <a class="nav-link" href="{{route('about_us')}}">Chi siamo</a>
         </li>
        
         </li>
@@ -44,6 +44,7 @@
     </div>
 </header>
 <main>
+  <section>
     <div class="container">
    <div class="row">
      <div class="col-12"><h2 class="text-white text-color">Birrifici Italiani</h2>
@@ -70,6 +71,7 @@
     </div>
    </div>
     </div>
+  </section>
 </main>
 
 

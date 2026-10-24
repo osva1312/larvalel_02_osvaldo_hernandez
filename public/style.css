@@ -1,6 +1,9 @@
 body{
     background-color: black;
 }
+.navbar{
+    position: sticky; top: 0;
+}
 
 .header{
     background: linear-gradient(transparent, black), url('/media/header.jpg');
@@ -21,7 +24,28 @@ body{
     color: #ffffff;
 }
 .body-deatil{
-    background-color: rgb(33, 38, 38);
+    background-color: rgb(154, 116, 2);
     color: #ffffff;
     background-image: url('/media/header.jpg');
+}
+
+.button-style{
+    color: rgb(255, 247, 247);
+    background-color: rgb(172, 119, 6);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 4px;
+    position: fixed;bottom: 0%;
+}
+.brewery-height{
+    height: 70vh;
+}
+.card-body{
+    background-color: #b47e0a;
+    
+}
+.card-img{
+    height: 200px;
+    object-fit: cover;
 }

@@ -11,7 +11,7 @@
    
     <nav class="navbar navbar-expand-lg bg-dark border-bottom" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,10 +21,10 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/servizi">Servizi</a>
+          <a class="nav-link" href="/services">Servizi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/chi_siamo">Chi siamo</a>
+          <a class="nav-link" href="/about_us">Chi siamo</a>
         </li>
        
       
@@ -34,29 +34,27 @@
   </div>
 </nav>
 <header>
-    <div class="container_fluid header ">
-        <div class="row h-100">
+    <div class="container_fluid header services ">
+        <div class="row text-white ">
          <div class="col-12 h-25 justify-content-center aling-items-center">
-            <h2 class="text-white text-color display-5 text-center">Servizi</h2>
+            <h2 class="text-white text-color display-5 text-center">{{$service['name']}}</h2>
          </div>
-         <div><h1 class="text-white text-color text center ps-4">Servizi & Esperienze: Un Viaggio nel Gusto Artigianale
-Che tu stia cercando una serata indimenticabile, la birra perfetta per il tuo weekend o un tour tra i segreti della luppolatura, ecco tutto ciò che le nostre eccellenze artigianali hanno da offrirti!</h1></div>
-        <div class="ps-4">
-           <ul class="lista">
-              <li><h3 class="text-white text-color">Cucina BBQ & Gourmet</h3></li>
-            <li><h3 class="text-white text-color">Birra & Mixology</h3></li>
-            <li><h3 class="text-white text-color">Eventi & Enterteiment</h3></li>
-            <li><h3 class="text-white text-color"i>Asporto & Delivery</h3></li>
-           </ul>
-        </div>
-
-        
+         <div class="col-4 md-4">
+           <h5><strong>Food: {{$service['food']}}</strong></h5>
+           <h5><strong>bar: {{$service['bar']}}</strong></h5>
+         </div>
+         <div class="col-8 md-4">
+          <img src="{{$service['img']}}" alt="poster di {{$service['name']}}">
+         </div>
          
-
-            </div>
+         
+        
         </div>
     </div>
 </header>
+ <a class="button-style" href="/services">Torna indietro</a>
+
+
 
 
 
